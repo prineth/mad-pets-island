@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 
 private const val ARG_PARAM1 = "param1"
@@ -19,7 +21,20 @@ class ShopFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_shop, container, false)
+        var view = inflater.inflate(R.layout.fragment_shop, container, false)
+
+        var recyclerView: RecyclerView = view.findViewById(R.id.recycler_view)
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = GridLayoutManager(context,
+            2,
+            GridLayoutManager.VERTICAL,
+            false)
+
+
+        val adapter = ProductAdapter()
+        recyclerView.adapter = adapter
+
+        return view
     }
 
 
