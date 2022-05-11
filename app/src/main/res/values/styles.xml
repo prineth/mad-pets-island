@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="welcome_sig">
+
+        <item name="android:textSize">
+            35sp
+        </item>
+
+        <item name="android:textColor">
+            #8F7E7E
+        </item>
+
+    </style>
+
+    <style name="login_txt_box">
+        <item name="textFillColor">#000000</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "184876335281",
+    "project_id": "pets-island",
+    "storage_bucket": "pets-island.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184876335281:android:9d1d27ad7b45ba64e1e290",
+        "android_client_info": {
+          "package_name": "com.example.petsisland"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184876335281-m6fv07jnkn80467c3l68q5qhda4ncjkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsbWFzjAZpbvTA8FDM1riEatScUY6bGCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184876335281-m6fv07jnkn80467c3l68q5qhda4ncjkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

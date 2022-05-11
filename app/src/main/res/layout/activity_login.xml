@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8D3527"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/loginImg"
+        android:layout_width="414dp"
+        android:layout_height="500dp"
+        android:src="@drawable/signin_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/signup_bg_bottom_container"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Welcome, Sign Up -->
+        <TextView
+            android:id="@+id/loginTxt"
+            android:layout_width="296dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Welcome, Sign In"
+            android:textAppearance="@style/welcome_sig"
+            android:textFontWeight="700" />
+
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_edit_bg"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:hint="Email"
+            android:padding="15dp"
+            android:textColor="#8D3527"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="#8D3527" />
+
+
+        <EditText
+            android:id="@+id/passET"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_edit_bg"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#8D3527"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="#8D3527"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signIn"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signup_btn_bg"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:drawableEnd="@drawable/ic_baseline_login_24"
+            android:paddingRight="30dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/click_to_signup" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
