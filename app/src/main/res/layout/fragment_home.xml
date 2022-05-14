@@ -6,17 +6,6 @@
     tools:context=".HomeFragment">
 
 
-    <View
-        android:id="@+id/ac_ecom_sit"
-        android:layout_width="54dp"
-        android:layout_height="54dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="326dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/ac_ecom_sit"
-        />
-
 
     <TextView
         android:id="@+id/best_care_f"
@@ -25,11 +14,12 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="35dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="20dp"
         android:text="@string/best_care_f"
         android:textAppearance="@style/best_care_f"
         android:gravity="center_vertical"
         />
+
 
 
 </RelativeLayout>

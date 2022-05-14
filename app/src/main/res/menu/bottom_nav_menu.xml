@@ -12,9 +12,9 @@
         android:title="Shop" />
 
     <item
-        android:id="@+id/clinic"
-        android:title="Clinic"
-        android:icon="@drawable/ic_baseline_medical_services_24"/>
+        android:id="@+id/pets"
+        android:title="Pets"
+        android:icon="@drawable/ic_baseline_pets_24"/>
 
     <item
         android:id="@+id/profile"

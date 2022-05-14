@@ -12,6 +12,19 @@ import com.squareup.picasso.Picasso
 class ProductAdapter(private var productList: MutableList<Product>) :
     RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
+    //onclick option ---start
+//    private lateinit var mListener: onItemClickListener
+//
+//
+//    interface onItemClickListener{
+//        fun onItemClick(position: Int)
+//    }
+//
+//    fun setOnItemClickListener(listener: onItemClickListener){
+//        mListener = listener
+//    }
+
+    //onclick option ---end
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -30,6 +43,8 @@ class ProductAdapter(private var productList: MutableList<Product>) :
             .into(holder.productImage)
         holder.productTitle.text = productList[position].title
         holder.productPrice.text = productList[position].price
+
+
     }
 
     override fun getItemCount(): Int {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="welcome_sig">
 
         <item name="android:textSize">
@@ -18,7 +19,7 @@
         <item name="cornerSize">50%</item>
     </style>
 
-    <!-- styles.xml -->
+    <!-- best care for animals -->
     <style name="best_care_f">
 
         <item name="android:textSize">
