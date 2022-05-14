@@ -13,16 +13,16 @@ class ProductAdapter(private var productList: MutableList<Product>) :
     RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
     //onclick option ---start
-//    private lateinit var mListener: onItemClickListener
-//
-//
-//    interface onItemClickListener{
-//        fun onItemClick(position: Int)
-//    }
-//
-//    fun setOnItemClickListener(listener: onItemClickListener){
-//        mListener = listener
-//    }
+    private lateinit var mListener: onItemClickListener
+
+
+    interface onItemClickListener {
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(listener: onItemClickListener) {
+        mListener = listener
+    }
 
     //onclick option ---end
 
@@ -33,7 +33,7 @@ class ProductAdapter(private var productList: MutableList<Product>) :
 
         val layoutView: View =
             LayoutInflater.from(parent.context).inflate(R.layout.product_card_view, parent, false)
-        return ProductViewHolder(layoutView)
+        return ProductViewHolder(layoutView, mListener)
 
     }
 
@@ -51,9 +51,17 @@ class ProductAdapter(private var productList: MutableList<Product>) :
         return productList.size
     }
 
-    class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class ProductViewHolder(view: View, listener: onItemClickListener) :
+        RecyclerView.ViewHolder(view) {
         var productImage: ImageView = view.findViewById(R.id.product_image)
         var productTitle: TextView = view.findViewById(R.id.product_title)
         var productPrice: TextView = view.findViewById(R.id.product_price)
+
+        init {
+            itemView.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
+        }
+
     }
 }

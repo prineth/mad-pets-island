@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
@@ -45,8 +46,20 @@ class ShopFragment : Fragment() {
                     productList.add(products)
                 }
 
+
+
                 val adapter = ProductAdapter(productList)
                 recyclerView?.adapter = adapter
+
+//for recycler view click --start
+                adapter.setOnItemClickListener(object :ProductAdapter.onItemClickListener{
+                    override fun onItemClick(position: Int) {
+                        Toast.makeText(requireContext(),"Clicked on item no $position",Toast.LENGTH_SHORT).show()
+                    }
+
+                })
+
+//for recycler view click --end
             }
 
             override fun onCancelled(error: DatabaseError) {
