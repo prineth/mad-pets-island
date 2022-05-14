@@ -1,4 +1,4 @@
-package com.example.petsisland
+ package com.example.petsisland
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,7 +14,6 @@ private const val ARG_PARAM2 = "param2"
 
 
 class HomeFragment : Fragment() {
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
