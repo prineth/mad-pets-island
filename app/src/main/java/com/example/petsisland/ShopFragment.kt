@@ -47,14 +47,18 @@ class ShopFragment : Fragment() {
                 }
 
 
-
                 val adapter = ProductAdapter(productList)
                 recyclerView?.adapter = adapter
 
 //for recycler view click --start
+
+
+
                 adapter.setOnItemClickListener(object :ProductAdapter.onItemClickListener{
                     override fun onItemClick(position: Int) {
-                        Toast.makeText(requireContext(),"Clicked on item no $position",Toast.LENGTH_SHORT).show()
+                        val itemImg = productList[position].img
+                        val itemTitle = productList[position].title
+                        Toast.makeText(requireContext(),"Clicked on item no $itemTitle ",Toast.LENGTH_SHORT).show()
                     }
 
                 })
