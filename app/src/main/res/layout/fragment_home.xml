@@ -6,20 +6,30 @@
     tools:context=".HomeFragment">
 
 
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_vertical"
+        android:text="Hello, user@gmail.com"
+        android:textAppearance="@style/best_care_f"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/best_care_f"
         android:layout_width="330dp"
         android:layout_height="94dp"
+        android:layout_below="@+id/welcome"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="35dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
-        android:text="@string/best_care_f"
-        android:textAppearance="@style/best_care_f"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="8dp"
         android:gravity="center_vertical"
-        />
-
+        android:text="@string/best_care_f"
+        android:textAppearance="@style/best_care_f" />
 
 
 </RelativeLayout>
