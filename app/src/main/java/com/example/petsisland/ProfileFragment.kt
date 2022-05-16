@@ -39,13 +39,16 @@ class ProfileFragment : Fragment() {
             Firebase.auth.signOut()
             var navlogin = activity as LoginActivity
 
+
         }
 
-       
+
+
 
         return view
 
     }
+
 
 
 }

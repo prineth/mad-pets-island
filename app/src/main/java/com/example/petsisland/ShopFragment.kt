@@ -1,5 +1,6 @@
 package com.example.petsisland
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -47,6 +48,8 @@ class ShopFragment : Fragment() {
                 }
 
 
+
+
                 val adapter = ProductAdapter(productList)
                 recyclerView?.adapter = adapter
 
@@ -58,7 +61,20 @@ class ShopFragment : Fragment() {
                     override fun onItemClick(position: Int) {
                         val itemImg = productList[position].img
                         val itemTitle = productList[position].title
-                        Toast.makeText(requireContext(),"Clicked on item no $itemTitle ",Toast.LENGTH_SHORT).show()
+                        val itemPrice = productList[position].price
+                        Toast.makeText(requireContext(),"Clicked on item no $itemTitle $itemPrice",Toast.LENGTH_SHORT).show()
+
+                        activity?.let {
+                            val intent = Intent(it, BillActivity::class.java)
+//          ----------------pass data to bill_fragment
+                            intent.putExtra("item_img",itemImg)
+                            intent.putExtra("item_name",itemTitle)
+                            intent.putExtra("item_price",itemPrice)
+                            it.startActivity(intent)
+                        }
+
+
+
                     }
 
                 })
