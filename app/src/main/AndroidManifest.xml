@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PetsIsland">
-        <activity android:name=".BillActivity"></activity>
+        <activity android:name=".OrderSuccessActivity"></activity>
+        <activity android:name=".BillActivity" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -24,7 +25,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

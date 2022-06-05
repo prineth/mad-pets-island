@@ -19,16 +19,16 @@
         <item name="cornerSize">50%</item>
     </style>
 
+    <!-- home fragment user email -->
+    <style name="txt_user_email">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
     <!-- best care for animals -->
     <style name="best_care_f">
-
-        <item name="android:textSize">
-            27sp
-        </item>
-
-        <item name="android:textColor">
-            #6F7279
-        </item>
+        <item name="android:textSize">35dp</item>
+        <item name="android:textColor">@color/grey</item>
 
     </style>
 
