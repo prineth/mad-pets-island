@@ -15,11 +15,7 @@
         android:name="com.example.petsisland.ShopFragment"
         android:label="fragment_shop"
         tools:layout="@layout/fragment_shop" />
-    <fragment
-        android:id="@+id/clinic"
-        android:name="com.example.petsisland.ClinicFragment"
-        android:label="fragment_clinic"
-        tools:layout="@layout/fragment_clinic" />
+
     <fragment
         android:id="@+id/profile"
         android:name="com.example.petsisland.ProfileFragment"

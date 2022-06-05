@@ -8,8 +8,28 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Prifile fragment"
+        android:text="Profile fragment"
         android:textSize="25dp"
         android:layout_centerInParent="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="226dp"
+        android:background="@drawable/signup_btn_bg"
+        android:drawableEnd="@drawable/ic_baseline_login_24"
+        android:paddingRight="30dp"
+        android:text="Log out"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
 </RelativeLayout>

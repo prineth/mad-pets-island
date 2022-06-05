@@ -11,10 +11,6 @@
         android:icon="@drawable/ic_baseline_shopping_bag_24"
         android:title="Shop" />
 
-    <item
-        android:id="@+id/clinic"
-        android:title="Clinic"
-        android:icon="@drawable/ic_baseline_medical_services_24"/>
 
     <item
         android:id="@+id/profile"

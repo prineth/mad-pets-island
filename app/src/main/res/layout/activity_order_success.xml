@@ -1,0 +1,77 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#8D3527"
+tools:context=".OrderSuccessActivity">
+
+<ImageView
+    android:id="@+id/signupImg"
+    android:layout_width="414dp"
+    android:layout_height="500dp"
+    android:contentDescription="TODO"
+    android:src="@drawable/signup_bg"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/signupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/signup_bg_bottom_container"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Order Placed"
+            android:textAppearance="@style/welcome_sig"
+            android:textFontWeight="700" />
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Successfully!"
+            android:textAppearance="@style/welcome_sig"
+            android:textFontWeight="700" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            app:srcCompat="@drawable/signin_bg" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_toHome"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/signup_btn_bg"
+            android:drawableEnd="@drawable/ic_baseline_home_24_white"
+            android:paddingRight="30dp"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

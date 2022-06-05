@@ -3,6 +3,11 @@
     <string name="welcome_sig">Welcome, Sign Up</string>
     <string name="click_to_login"><u>Already have an account?  Sign In</u></string>
     <string name="click_to_signup"><u>Don\'t have an account? Sign Up</u></string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="best_care_f"><b>Best Care</b> \nfor Best Pets...</string>
+    <string name="home_card_title"><b>Dog collar</b></string>
+    <string name="bye_item_btn">Buy this item</string>
+    <string name="home_card_top"><b>Top</b></string>
+    <string name="home_popular_title"><b>Popular</b></string>
 </resources>
