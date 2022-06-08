@@ -52,21 +52,20 @@ class BillActivity : AppCompatActivity() {
             quantity++
             binding.billQuantity.text = quantity.toString()
             total = quantity * intPrice
-            binding.billAmount.text = total.toString()
+            binding.billAmount.text = total.toString().plus("$")
         }
 
         binding.buttonLow.setOnClickListener {
             quantity--
             binding.billQuantity.text = quantity.toString()
             total = quantity * intPrice
-            binding.billAmount.text = total.toString()
+            binding.billAmount.text = total.toString().plus("$")
         }
 
 
 //checkout button
         binding.buttonCheckout.setOnClickListener {
 
-//            addUser()
 
             val email = "user@gmail.com"
             val title = binding.billTitle.text.toString()

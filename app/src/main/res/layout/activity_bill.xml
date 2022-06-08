@@ -96,16 +96,18 @@
 
         <TextView
             android:id="@+id/bill_amount"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="73dp"
+            android:layout_height="43dp"
             android:layout_marginBottom="92dp"
             android:text="0"
+            android:textAlignment="center"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bill_quantity"
-            app:layout_constraintVertical_bias="0.168" />
+            app:layout_constraintVertical_bias="0.17" />
 
         <TextView
             android:id="@+id/bill_quantity"

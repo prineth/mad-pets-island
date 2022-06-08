@@ -41,13 +41,12 @@ class LoginActivity : AppCompatActivity() {
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
 
-
-
                         val fragment = HomeFragment()
                         val bundle = Bundle()
-                        bundle.putString("string",email)
+                        bundle.putString("string", email)
                         fragment.arguments = bundle
-                        supportFragmentManager.beginTransaction().replace(R.id.loginContainer,fragment)
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.loginContainer, fragment)
                             .commit()
 
                     } else {
@@ -61,7 +60,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
     }
-
 
 
 }

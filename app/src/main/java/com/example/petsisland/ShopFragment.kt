@@ -53,10 +53,6 @@ class ShopFragment : Fragment() {
                 val adapter = ProductAdapter(productList)
                 recyclerView?.adapter = adapter
 
-//for recycler view click --start
-
-
-
                 adapter.setOnItemClickListener(object :ProductAdapter.onItemClickListener{
                     override fun onItemClick(position: Int) {
                         val itemImg = productList[position].img
@@ -72,9 +68,6 @@ class ShopFragment : Fragment() {
                             intent.putExtra("item_price",itemPrice)
                             it.startActivity(intent)
                         }
-
-
-
                     }
 
                 })
@@ -88,7 +81,6 @@ class ShopFragment : Fragment() {
 
         }
         reference?.addValueEventListener(FirebaseListener)
-
         recyclerView = view.findViewById(R.id.recycler_view)
         recyclerView?.setHasFixedSize(true)
         recyclerView?.layoutManager = GridLayoutManager(
